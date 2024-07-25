@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Form validation</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <form action="">
+        <div class="input-container">
+          <input
+            type="text"
+            class="username"
+            placeholder="John Doe"
+            id="username"
+          />
+          <p class="user-msg msg">error message</p>
+        </div>
+
+        <div class="input-container">
+          <input
+            type="email"
+            class="email"
+            placeholder="hello@example.com"
+            id="email"
+          />
+          <p class="email-msg msg">error message</p>
+        </div>
+
+        <div class="input-container">
+          <input
+            type="password"
+            class="password1"
+            placeholder="Type your password"
+            id="password1"
+          />
+          <p class="password1-msg msg">error message</p>
+        </div>
+
+        <div class="input-container">
+          <input
+            type="password"
+            class="password2"
+            placeholder="Confirm password"
+            id="password2"
+          />
+          <p class="password2-msg msg">error message</p>
+        </div>
+
+        <input type="submit" value="submit" id="submit" class="submit" />
+        <p class="already">Already have an account? <a href="#">Login</a></p>
+
+        <!-- Image -->
+        <div class="content">
+          <img src="./img/country.JPG" alt="Nigeria flag" />
+          <h1>Patriots <br />Union</h1>
+        </div>
+      </form>
+    </section>
+
+    <script src="./js/script.js" async defer></script>
+  </body>
+</html>
