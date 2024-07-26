@@ -24,6 +24,9 @@ submit.addEventListener("click", function (event) {
     password2.value === ""
   ) {
     alert("Please fill all input fields");
+  } else {
+    document.body.classList.add("flag");
+    document.querySelector("form").style.display = "none";
   }
 
   if (username.value === "") {

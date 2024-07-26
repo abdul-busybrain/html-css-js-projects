@@ -15,6 +15,13 @@ body {
   background-color: var(--main-color);
 }
 
+.flag {
+  background-image: url(../img/country.JPG);
+  background-size: 150vh;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 form {
   border: 2px solid rgba(255, 255, 255, 0.224);
   border-radius: 5px;
