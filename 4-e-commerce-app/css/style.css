@@ -19,39 +19,39 @@ body {
 }
 
 h1 {
-  font-size: 50rem;
-  line-height: 64rem;
+  font-size: 5rem;
+  line-height: 6.4rem;
   color: #222;
 }
 
 h2 {
-  font-size: 46rem;
-  line-height: 54rem;
+  font-size: 4.6rem;
+  line-height: 5.4rem;
   color: #222;
 }
 
 h4 {
-  font-size: 20rem;
+  font-size: 2rem;
   color: #222;
 }
 
 h6 {
   font-weight: 700;
-  font-size: 12rem;
+  font-size: 1.2rem;
 }
 
 p {
-  font-size: 16rem;
+  font-size: 1.6rem;
   color: #465b52;
-  margin: 15rem 0 20rem 0;
+  margin: 1.5rem 0 2rem 0;
 }
 
 .section-p1 {
-  padding: 40rem 80rem;
+  padding: 4rem 8rem;
 }
 
 .section-m1 {
-  margin: 40rem 0;
+  margin: 4rem 0;
 }
 
 /* Header Section */
@@ -62,6 +62,10 @@ p {
   padding: 2rem 8rem;
   background: #e3e6f3;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 #navbar {
@@ -73,6 +77,7 @@ p {
 #navbar li {
   list-style-type: none;
   padding: 0 2rem;
+  position: relative;
 }
 
 #navbar a {
@@ -80,4 +85,173 @@ p {
   font-size: 1.6rem;
   font-weight: 600;
   color: #1a1a1a;
+  transition: 0.3s ease;
+}
+
+#navbar a:hover,
+#navbar a.active {
+  color: #088178;
+}
+
+#navbar a.active::after,
+#navbar a:hover::after {
+  content: "";
+  width: 30%;
+  height: 0.2rem;
+  background: #088178;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 2rem;
+}
+
+/* Home page section */
+#hero {
+  background-image: url("../img/hero4.png");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 8rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#hero h4 {
+  padding-bottom: 1.5rem;
+}
+
+#hero h1 {
+  color: #088178;
+}
+
+#hero button {
+  background-image: url("../img/button.png");
+  background-color: transparent;
+  color: #088178;
+  border: 0;
+  padding: 1.4rem 8rem 1.4rem 6.5rem;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#feature .fe-box {
+  width: 18rem;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 2rem 2rem 3.4rem rgba(0, 0, 0, 0.3);
+  border: 1px solid #cce7d0;
+  border-radius: 0.4rem;
+  margin: 1.5rem 0;
+}
+
+#feature .fe-box:hover {
+  box-shadow: 1rem 1rem 5.4rem rgba(0, 0, 0, 0.1);
+}
+
+#feature .fe-box img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+#feature .fe-box h6 {
+  display: inline-block;
+  padding: 0.9rem 0.8rem 0.6rem 0.8rem;
+  line-height: 1;
+  border-radius: 0.4rem;
+  color: #088178;
+  background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+#feature .fe-box:nth-child(6) h6 {
+  background-color: #fff2e5;
+}
+
+#product1 {
+  text-align: center;
+}
+
+#product1 .product {
+  width: 23%;
+  min-width: 25rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid #cce7d0;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.2);
+  margin: 1.5rem 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+#product1 .product:hover {
+  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.6);
+}
+#product1 .product img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+#product1 .product .description {
+  text-align: start;
+  padding: 1rem 0;
+}
+
+#product1 .product .description span {
+  color: #606063;
+  font-size: 1.2rem;
+}
+
+#product1 .product .description h5 {
+  padding-top: 0.7rem;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+}
+
+#product1 .product .description i {
+  font-size: 1.2rem;
+  color: rgb(243, 181, 25);
+}
+
+#product1 .product .description h4 {
+  padding-top: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #088178;
+}
+
+#product1 .product .cart {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 5rem;
+  background-color: #e8f6ea;
+  /* font-weight: 500; */
+  color: #088178;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
 }
