@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Default */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-size: 50rem;
+  line-height: 64rem;
+  color: #222;
+}
+
+h2 {
+  font-size: 46rem;
+  line-height: 54rem;
+  color: #222;
+}
+
+h4 {
+  font-size: 20rem;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12rem;
+}
+
+p {
+  font-size: 16rem;
+  color: #465b52;
+  margin: 15rem 0 20rem 0;
+}
+
+.section-p1 {
+  padding: 40rem 80rem;
+}
+
+.section-m1 {
+  margin: 40rem 0;
+}
+
+/* Header Section */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+  background: #e3e6f3;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.6);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style-type: none;
+  padding: 0 2rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
