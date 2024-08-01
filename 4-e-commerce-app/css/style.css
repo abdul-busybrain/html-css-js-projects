@@ -341,7 +341,7 @@ p {
 }
 
 #sm-banner .banner-box2 {
-  border-image: url("../img/banner/b10.jpg");
+  background-image: url("../img/banner/b10.jpg");
 }
 
 #sm-banner h4 {
