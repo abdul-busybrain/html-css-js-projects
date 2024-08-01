@@ -15,7 +15,32 @@ html {
 
 body {
   width: 100%;
-  font-size: 1.8rem;
+}
+
+button.normal {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1.5rem 3rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+button.white {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1.1rem 1.8rem;
+  color: #fff;
+  background-color: transparent;
+  /* border-radius: 0.4rem; */
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  transition: 0.2s;
 }
 
 h1 {
@@ -193,6 +218,13 @@ p {
   text-align: center;
 }
 
+#product1 .product-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+
 #product1 .product {
   width: 23%;
   min-width: 25rem;
@@ -254,4 +286,84 @@ p {
   position: absolute;
   bottom: 2rem;
   right: 1rem;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../img/banner/b2.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner h4 {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+#banner h2 {
+  color: #fff;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+#banner span {
+  color: #ef3636;
+}
+
+#banner button:hover {
+  background: #088178;
+}
+
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* text-align: center; */
+  background-image: url("../img/banner/b17.jpg");
+  min-width: 58rem;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+}
+
+#sm-banner .banner-box2 {
+  border-image: url("../img/banner/b10.jpg");
+}
+
+#sm-banner h4 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+#sm-banner h2 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+#sm-banner span {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 5rem;
+}
+
+#sm-banner .banner-box:hover button {
+  background: #088178;
+  border: 1px solid #088178;
 }
