@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  font-size: 1.8rem;
   width: 100%;
 }
 
@@ -242,6 +243,7 @@ p {
   border-radius: 2.5rem;
   cursor: pointer;
   box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   margin: 1.5rem 0;
   transition: 0.2s ease;
   position: relative;
@@ -535,6 +537,103 @@ footer,
   text-align: center;
 }
 
+/* Shop page */
+#page-header {
+  background-image: url("../img/banner/b1.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 1.4rem;
+}
+
+#page-header h2,
+#page-header p {
+  color: #fff;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #088178;
+  padding: 1.5rem 2rem;
+  border: 0.4rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Single product */
+#product-details {
+  display: flex;
+  margin-top: 2rem;
+}
+
+#product-details .single-product-img {
+  width: 40%;
+  margin-right: 5rem;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#product-details .single-product-details {
+  width: 50%;
+  padding-top: 3rem;
+}
+
+#product-details .single-product-details h4 {
+  padding: 4rem 0 2rem 0;
+}
+
+#product-details .single-product-details h2 {
+  font-size: 2.6rem;
+}
+
+#product-details .single-product-details select {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+#product-details .single-product-details input {
+  width: 5rem;
+  height: 4.7rem;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+
+#product-details .single-product-details input:focus {
+  outline: none;
+}
+
+#product-details .single-product-details button {
+  background: #088178;
+  color: #fff;
+}
+
+#product-details .single-product-details span {
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+}
+
 /* Media queries */
 @media (max-width: 49.9375em) {
   .section-p1 {
@@ -666,6 +765,10 @@ footer,
     width: 100%;
   }
 
+  #product1 .product .description h5 {
+    font-size: 2rem;
+  }
+
   #banner {
     height: 40vh;
   }
@@ -696,5 +799,20 @@ footer,
 
   footer .copyright {
     text-align: start;
+  }
+
+  /* Single product */
+  #product-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #product-details .single-product-img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #product-details .single-product-details {
+    width: 100%;
   }
 }
